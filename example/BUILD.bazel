@@ -1,0 +1,32 @@
+load("@rules_cc//cc:defs.bzl", "cc_binary")
+
+cc_binary(
+    name = "args_to_numbers",
+    srcs = ["args_to_numbers.cpp"],
+    deps = ["//:lexical_cast"],
+)
+
+# cc_binary(
+#     name = "generic_stringize",
+#     srcs = ["generic_stringize.cpp"],
+#     deps = [
+#         "//:lexical_cast",
+#         "@boost//config",
+#         "@boost//fusion",
+#     ],
+# )
+
+cc_binary(
+    name = "small_examples",
+    srcs = ["small_examples.cpp"],
+    deps = ["//:lexical_cast"],
+)
+
+cc_binary(
+    name = "variant_to_long_double",
+    srcs = ["variant_to_long_double.cpp"],
+    deps = [
+        "//:lexical_cast",
+        "@boost//variant",
+    ],
+)

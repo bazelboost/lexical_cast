@@ -20,5 +20,9 @@ cc_library(
         "@boost//integer",
         "@boost//array",
         "@boost//container",
+        "@boost//range",
+        "@boost//numeric_conversion",
+        "@boost//move",
+        "@boost//math",
     ],
 )
