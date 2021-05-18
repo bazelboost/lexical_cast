@@ -11,8 +11,8 @@ cc_binary(
 #     srcs = ["generic_stringize.cpp"],
 #     deps = [
 #         "//:lexical_cast",
-#         "@boost//config",
-#         "@boost//fusion",
+#         "@boost//libs/config",
+#         "@boost//libs/fusion",
 #     ],
 # )
 
@@ -27,6 +27,6 @@ cc_binary(
     srcs = ["variant_to_long_double.cpp"],
     deps = [
         "//:lexical_cast",
-        "@boost//variant",
+        "@boost//libs/variant",
     ],
 )
